@@ -1,0 +1,121 @@
+* {
+    
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.container {
+    width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: rgb(0, 7, 9);
+    border-radius: 10px;
+}
+
+.newTask { 
+    position: relative;
+    padding: 30px 20px;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/2064639.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newTask input {
+    width: 90%;
+    height: 42px;
+    font-size: 18px;
+    border: 2px solid #0e85c5;
+    padding: 10px;
+    color: #111111;
+    position: relative;
+    border-radius: 7px;
+}
+
+.newTask input:focus {
+    outline: none;
+    border-color: #4e4cff;
+}
+
+.newTask button {
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #7281a9;
+    border: none;
+    color: #090000;
+    cursor: pointer;
+    outline: none;
+}
+
+#task {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    background-color: #ffffff;
+    height: 50px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.task span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.delete {
+    background-color: rgb(185, 0, 0);
+    color: #ffffff;
+    height: 100%;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.taskCheck {
+    display: flex;
+    align-items: center;
+}
+
+.taskCheckbox {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.taskCheckbox:checked+#taskname {
+    text-decoration: line-through;
+}
+
+h1 {
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: monospace;    
+    font-size: 36px;
+	color: #986ce5;
+	text-shadow: 2px 2px 2px  rgb(19, 19, 18), 0 3px rgb(4, 38, 37);
+}
